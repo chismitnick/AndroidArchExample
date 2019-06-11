@@ -44,7 +44,6 @@ public class NoteRepository {
     }
 
 
-
     //Asynctask used because android prevents database operations from executing on the main thread
 
     private static class InsertNoteAsyncTask extends AsyncTask<Note, Void, Void> {
@@ -102,7 +101,7 @@ public class NoteRepository {
         @Override
         protected Void doInBackground(Void... voids) {
             noteDao.DeleteAllNotes();
-            return  null;
+            return null;
 
         }
     }
