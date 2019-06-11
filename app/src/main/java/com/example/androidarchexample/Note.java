@@ -12,9 +12,9 @@ public class Note {
     @PrimaryKey(autoGenerate = true)
     private int id;
 
-    private String title ;
+    private String title;
 
-    private String description ;
+    private String description;
 
     private int priority;
 
@@ -36,7 +36,6 @@ public class Note {
     }
 
 
-
     public String getTitle() {
         return title;
     }
@@ -48,8 +47,6 @@ public class Note {
     public int getPriority() {
         return priority;
     }
-
-
 
 
 }
