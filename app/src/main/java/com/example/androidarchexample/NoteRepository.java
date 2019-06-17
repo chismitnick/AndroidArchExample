@@ -20,6 +20,7 @@ public class NoteRepository {
 
     //method to insert notes
     public void insert(Note note) {
+        new InsertNoteAsyncTask(noteDao).equals(note);
 
     }
 
@@ -85,6 +86,7 @@ public class NoteRepository {
 
         @Override
         protected Void doInBackground(Note... notes) {
+            //Acess note at index 0
             noteDao.insert(notes[0]);
             return null;
         }
