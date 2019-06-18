@@ -19,7 +19,7 @@ public class Note {
     private int priority;
 
     // Constructor
-    public Note(String title, String description, int priority) {
+    public Note(String title, String description, String priority) {
         this.title = title;
         this.description = description;
         this.priority = priority;
