@@ -10,7 +10,12 @@ import androidx.lifecycle.AndroidViewModel;
 import androidx.lifecycle.LiveData;
 
 
-//Avoid storing application context in the view model
+//Avoid storing application context in the view model or
+// Enables app to survive configuration changes
+//its is only removed from meteor when the lifecycle of the corresponding activity is over
+
+//Android View Model is a subclass of ViewModel the difference  being that
+//The Android View Model passes the application in the constructor
 
 public class NoteViewModel extends AndroidViewModel {
 

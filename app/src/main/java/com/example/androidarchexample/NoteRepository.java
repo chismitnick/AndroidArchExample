@@ -35,13 +35,13 @@ public class NoteRepository {
 
     //method to update notes
     public void update(Note note) {
-    new  UpdateNoteAsyncTask(noteDao).execute(note);
+        new UpdateNoteAsyncTask(noteDao).execute(note);
 
     }
 
     //method to delete notes
     public void delete(Note note) {
-    new DeleteNoteAsyncTask(noteDao).execute(note);
+        new DeleteNoteAsyncTask(noteDao).execute(note);
     }
 
     //method to delete all notes

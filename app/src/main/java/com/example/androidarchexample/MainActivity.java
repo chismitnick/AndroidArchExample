@@ -1,5 +1,6 @@
 package com.example.androidarchexample;
 
+import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProviders;
@@ -22,7 +23,7 @@ public class MainActivity extends AppCompatActivity {
 
           // Call Back Method
             @Override
-            public void onChanged(List<Note> notes) {
+            public void onChanged( @Nullable List<Note> notes) {
                 //update RecyclerView
 
              //Toast.makeText()
