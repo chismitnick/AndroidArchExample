@@ -1,7 +1,6 @@
 package com.example.androidarchexample;
 
 
-import androidx.room.ColumnInfo;
 import androidx.room.Entity;
 import androidx.room.PrimaryKey;
 
@@ -19,7 +18,7 @@ public class Note {
     private int priority;
 
     // Constructor
-    public Note(String title, String description, String priority) {
+    public Note(String title, String description, int priority) {
         this.title = title;
         this.description = description;
         this.priority = priority;
